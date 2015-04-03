@@ -50,3 +50,38 @@ android {
         }
     }
 }
+
+install {
+    repositories.mavenInstaller {
+      // This generates POM.xml with proper parameters
+        pom {
+            project {
+                packaging 'aar'
+
+                // Add your description here
+                name 'Android Color Picker'
+                url https://github.com/jordanrobinson/android-color-picker
+
+                // Set your license
+                licenses {
+                    license {
+                        name 'The MIT License (MIT)'
+                        url 'https://raw.githubusercontent.com/JordanRobinson/android-color-picker/master/LICENSE'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'JordanRobinson'
+                        name 'Jordan Robinson'
+                        email 'me@jordanrobinson.co.uk'
+                    }
+                }
+                scm {
+                    connection 'git@github.com:jordanrobinson/android-color-picker.git'
+                    developerConnection 'http://jordanrobinson.co.uk'
+                    url 'https://github.com/jordanrobinson/android-color-picker'
+                }
+            }
+        }
+    }
+}
