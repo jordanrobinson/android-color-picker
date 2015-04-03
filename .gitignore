@@ -26,4 +26,4 @@ proguard/
 # Log Files
 *.log
 
-local.settings
+local.properties
