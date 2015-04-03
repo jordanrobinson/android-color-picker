@@ -10,7 +10,8 @@ buildscript {
 apply plugin: 'com.android.library'
 apply plugin: 'android-maven'
 
-version = "1.0.0"
+version = "1.0.1"
+group = "uk.co.jordanrobinson"
 
 android {
     compileSdkVersion 21
@@ -87,7 +88,7 @@ install {
             packaging 'aar'
 
                 // Add your description here
-                name 'Android Color Picker'
+                name 'android-color-picker'
                 description 'The AOSP color picker, packaged for gradle'
                 url 'https://github.com/jordanrobinson/android-color-picker'
             }
