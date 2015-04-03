@@ -10,6 +10,8 @@ buildscript {
 apply plugin: 'com.android.library'
 apply plugin: 'android-maven'
 
+version = "1.0.0"
+
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.0"
@@ -42,7 +44,7 @@ android {
         minSdkVersion 9
         targetSdkVersion 21
         versionCode 1
-        versionName "0.1.0"
+        versionName version
     }
     buildTypes {
         release {
@@ -86,13 +88,11 @@ install {
 
                 // Add your description here
                 name 'Android Color Picker'
+                description 'The AOSP color picker, packaged for gradle'
                 url 'https://github.com/jordanrobinson/android-color-picker'
             }
         }
     }
-}
-
-dependencies {
 }
 
 task sourcesJar(type: Jar) {
@@ -113,23 +113,3 @@ artifacts {
     archives javadocJar
     archives sourcesJar
 }
-
-
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
-
-    configurations = ['archives']
-    pkg {
-        repo = "maven"
-        name = "Android Color Picker"
-        websiteUrl = 'https://github.com/jordanrobinson/android-color-picker'
-        vcsUrl = 'git@github.com:jordanrobinson/android-color-picker.git'
-        licenses = ["MIT"]
-        publish = true
-    }
-}
-
