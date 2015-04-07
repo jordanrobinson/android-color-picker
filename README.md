@@ -55,7 +55,7 @@ in your activity:
         colorPickerDialog.setOnColorSelectedListener(new ColorPickerSwatch.OnColorSelectedListener() {
             @Override
             public void onColorSelected(int colour) {
-                YourActivity.this.setInputFragmentBackgroundColour(colour);
+                YourActivity.this.setYourFragmentBackgroundColour(colour);
             }
         });
 
