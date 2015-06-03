@@ -4,13 +4,13 @@ The AOSP color picker, neatly packaged for gradle builds
 
 ## What is it
 
-Android color picker is the stock colour picker that comes bundled in a few apps distributed by Google, with the calendar app being the main example. It allows you to specify a list of colours, show the user a dialog, and get the result. Nice and simple.
+Android color picker is the stock color picker that comes bundled in a few apps distributed by Google, with the calendar app being the main example. It allows you to specify a list of colors, show the user a dialog, and get the result. Nice and simple.
 
 ![example-use](https://cloud.githubusercontent.com/assets/1202911/6986937/2475346e-da3a-11e4-99c5-0aeb3a0bcaa7.gif)
 
 ## Why is it here?
 
-I needed a colour picker, the stock color picker was exactly what I wanted, but grabbing the source, compiling down and using a local repo is nowhere near as fun as a Gradle dep.
+I needed a color picker for Android, the stock color picker was exactly what I wanted, but grabbing the source, compiling down and using a local repositry compiled to an AAR is nowhere near as fun as a Gradle dep.
 
 ## How do I use it
 
