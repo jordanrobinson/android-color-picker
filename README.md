@@ -10,7 +10,7 @@ Android color picker is the stock color picker that comes bundled in a few apps 
 
 ## Why is it here?
 
-I needed a color picker for Android, the stock color picker was exactly what I wanted, but grabbing the source, compiling down and using a local repositry compiled to an AAR is nowhere near as fun as a Gradle dep.
+I needed a color picker for Android, the stock color picker was exactly what I wanted, but grabbing the source, compiling down and using a local repository compiled to an AAR is nowhere near as fun as a Gradle dep.
 
 ## How do I use it
 
