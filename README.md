@@ -16,7 +16,7 @@ I needed a color picker for Android, the stock color picker was exactly what I w
 
 In your build file:
 
-	compile 'uk.co.jordanrobinson:android-color-picker:1.0.1'
+	compile 'uk.co.jordanrobinson:android-color-picker:1.0.2'
 
 
 in your layout:
