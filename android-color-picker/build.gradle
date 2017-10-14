@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'com.android.library'
 apply plugin: 'android-maven'
 
-version = "1.0.1"
+version = "1.0.2"
 group = "uk.co.jordanrobinson"
 
 android {
